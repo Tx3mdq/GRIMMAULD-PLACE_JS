@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/d54dfd10eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/></head>
+<header class="header">
+    <nav class="nav-menu">
+      <h1 class="logo"><a href="../index.html">GRIMMAULD-PLACE</a></h1>
+      <label for="btn-menu" class="nav__label">
+        <i class="fas fa-bars" id="menu-icon"></i>
+      </label>
+      <input type="checkbox" id="btn-menu" class="nav__imput" />
+      <ul class="menu">
+        <li><a href="../index.html">INICIO</a></li>
+        <li><a href="habitaciones.html">HABITACIONES</a></li>
+        <li><a href="gastronomia.html">GASTRONOMIA</a></li>
+        <li><a href="spa.html">SPA</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+</header>
+<body>
+    <div class="container-body">
+    <div class="container-buy">
+        <form action="#">
+            <div class="form first">
+                <div id="DetalleCompra"></div>
+                <div class="details personal">
+                    <span class="title">Informacion personal para la reserva</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nombre y Apellido</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese su Nombre y Apellido" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Fecha Nacimiento</label>
+                            <input type="date" style="background-color:transparent;" placeholder="Ingrese su fecha de Nacimiento" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese su email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Numero de Telefono</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese su numero de Telefono" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Sexo</label>
+                            <select style="background-color:transparent;" required>
+                                <option disabled selected>Seleccione Sexo</option>
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>Otros</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ocupacion</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ocupacion" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>DNI / Pasaporte</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese DNI o Pasaporte" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nacionalidad</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese su nacionalidad" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Direccion</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese su Direccion" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Codigo Postal</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese su Codigo postal" required>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <a href="../html/orden.html"><div class="backBtn1">
+                        <i class="uil uil-navigator"></i>
+                        <span class="btnText">Atras</span>
+                    </div></a>
+                    <button class="nextBtn">
+                        <span class="btnText">Siguiente</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+                </div> 
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Acompañantes</span>
+
+                    <div class="fields1">
+                        <div class="input-field">
+                            <label>Nombre y Apellido</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese Nombre y Apellido" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>DNI / Pasaporte</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese DNI o Pasaporte" required>
+                        </div> 
+                        <div class="input-field">
+                            <label>Nombre y Apellido</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese Nombre y Apellido" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>DNI / Pasaporte</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese DNI o Pasaporte" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Nombre y Apellido</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese Nombre y Apellido" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>DNI / Pasaporte</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese DNI o Pasaporte" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Nombre y Apellido</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese Nombre y Apellido" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>DNI / Pasaporte</label>
+                            <input type="text" style="background-color:transparent;" placeholder="Ingrese DNI o Pasaporte" required>
+                        </div>        
+                    </div>
+                </div>
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Atras</span>
+                        </div>
+                        <button class="sumbit">
+                            <span class="btnText">Confirmar</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+</div>
+<footer>
+    <div class="footer-top">
+      <div class="container-footer">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+            <h2>GRIMMAULD-PLACE</h2>
+            <p>
+              Av. Antartida Argentina 1990, (1AE7600), Mar del Plata, Argentina.
+              <br>
+              +54 223 495-3699/3600
+              <br>
+              <div class="mail__reservas">
+                <a href="#" target="_BLANK">Info Rervas</a>
+              </div>
+            </p>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
+            <ul>
+              <li><a href="#">Acerca de Nosotros</a></li>
+              <li><a href="#">Donde Estamos</a></li>
+              <li><a href="#">Mision y Vision</a></li>
+              <li><a href="#">Terminos y Condiciones</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+            <h2>Siguenos</h2>
+            <a href="https://www.facebook.com/" target="_BLANK"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_BLANK"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a href="https://ar.linkedin.com/" target="_BLANK"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a href="https://ar.pinterest.com/" target="_BLANK"
+              ><i class="fa fa-pinterest"></i
+            ></a>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
+            <h2>Subscribite</h2>
+            <p>Dejanos tu mail para promociones.</p>
+            <form action="">
+              <input type="email" />
+              <input type="submit" value="subscribe" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom-text">
+      Copyright 2022, Gaston Almeyda, todos los derechos reservados.
+    </p>
+      </footer>      
+</body>
+    <script src="../JavaScript/form.js"></script>
+</html>
