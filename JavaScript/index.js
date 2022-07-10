@@ -19,10 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 botonVaciar.addEventListener('click', () => {
-    carrito.length = 0
+    carrito.length = 0 
     actualizarCarrito ()
-    alert("Carrito Vacio")
 })
+
+
 botonComprar.addEventListener('click',() =>{
     carrito.length = 0
     actualizarCarrito ()
@@ -74,7 +75,7 @@ const eliminarDelCarrito = (habId) =>{
     const item = carrito.find((hab) =>hab.id === habId)
     const indice = carrito.indexOf(item)
     carrito.splice(indice, 1)
-    Swal.fire({
+    /*Swal.fire({
         title: 'Estas seguro?',
         text: "Usted va a eliminar la habitacion que selecciono!",
         icon: 'warning',
@@ -91,7 +92,7 @@ const eliminarDelCarrito = (habId) =>{
             'success'
           )
         }
-      })
+      })*/
     actualizarCarrito ()
 }
 
@@ -111,7 +112,8 @@ const actualizarCarrito = () => {
 
         contenedorCarrito.appendChild(div)
 
-        localStorage.setItem('carrito', JSON.stringify(carrito))
+         localStorage.setItem('carrito', JSON.stringify(carrito))
+       // let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     })
     contadorCarrito.innerText = carrito.length
     precioTotal.innerText = carrito.reduce((acc, hab) => acc + hab.pasajeros * hab.price, 0)

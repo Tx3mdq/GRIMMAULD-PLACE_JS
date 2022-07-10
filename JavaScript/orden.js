@@ -7,10 +7,16 @@ if(JSON.parse(localStorage.getItem('carrito'))){
 }
 
 const totalCarrito = () => {
-    return carrito.reduce((acc, prod) => acc + hab.price * hab.pasajeros, 0)
-}
-
-const body = document.getElementById('carrito');
+    // return carrito.reduce((acc, prod) => acc + hab.price * hab.pasajeros, 0)
+ //}
+     let total=0
+ 
+     for (const objeto of carrito){
+        // alert(objeto.category)
+         total = total + objeto.price
+     }
+ }
+const body = document.getElementById('carritoMuestra');
 if(carrito.length == 0){
     const texto = `
         <div class='cartContainer'>
@@ -29,47 +35,29 @@ if(carrito.length == 0){
             <h1 class='txtCarrito'>Carrito de compras</h1>
         </div>`;
     body.innerHTML += titulo;
-    const table = `
-        <div class='tableContainer'>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th class='txtTabla'>PRODUCTOS</th>
-                        <th class='txtTabla'>CANTIDAD</th>
-                        <th class='txtTabla'>PRECIO</th>
-                    </tr>
-                </thead>
-                <tbody id='tbody'>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th class='txtTotal'>Total:</th>
-                        <th id='total'>$${totalCarrito().toLocaleString()}</th>
-                    </tr>
-                </tfoot>
-            </table>
-            </div>
+    const table = `   
             <div class='btn-container'>
-                <button class='btnTerminar'>TERMINAR COMPRA</button>
-            </div>`;
-
-            // Operadores avanzados
+            <a class='btnVolver' href='../html/reservas.html'>
+                <button>VOLVER</button>
+            <a class='btnVolver' href='../html/compra.html'>
+                <button class='btnTerminar'>TERMINAR COMPRA</button></a>
+            </div>
+        </div>`;       
 body.innerHTML += table;
     const tbody = document.getElementById('tbody')
     for (let i = 0; i < carrito.length; i++) {
         const element = carrito[i];
-        const {id, name, img, price, pasajeros} = element
+        const {id, name, img, price, category, pasajeros} = element
         const cart = `
+        
             <tr id=${id}>
-                <th><img class='trash' src='./multimedia/trash.png' alt='foto de borrar'></th>
-                <th class='detallesTabla'><img class='imgProdCart' 
-                src=${img} alt='foto del producto'><span class='nombreProd'>${name}</span></th>
-                <th>${pasajeros}</th>
-                <th>$${(pasajeros * price).toLocaleString()}</th>
+                <img class='imgProdCart' src=${img} alt='foto del producto'>
+                <h2>${name}</h2>
+                <p>Servicio desayuno: ${category}</p>
+                <p>Cantidad de Pasajeros: ${pasajeros}</p>
+                <p>Total Habitacion: $${(pasajeros * price).toLocaleString()}</p>
             </tr>`
+           
             tbody.innerHTML += cart 
     }
 }
