@@ -259,7 +259,7 @@ li a {
   align-items: center; }
 
 .videos iframe {
-  width: 100%; }
+  width: 50%; }
 
 /*-------------------------------------------------- HABITACIONES -------------------------------------- */
 .contenedor__grid {
