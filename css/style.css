@@ -82,7 +82,7 @@
   margin: 0;
 }
 
-.mail__reservas a {
+.pronostico a {
     background: #f1a539;
     border: none;
     padding: 5px 10px;
@@ -92,7 +92,7 @@
     font-size: 16px;
     text-decoration: none;
   }
-  .mail__reservas a:hover{
+  .pronostico a:hover{
   background: #f1a539;
     color: white;
   }
