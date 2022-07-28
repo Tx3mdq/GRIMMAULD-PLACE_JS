@@ -1036,10 +1036,10 @@ form .fields .input-field{
     outline: none;
     font-size: 14px;
     font-weight: 400;
-    color: white;
+    color: black;
     padding: 0 15px;
     height: 42px;
-    margin: 8px 0;
+    margin: 8px 30px;
 }
 .input-field input :focus,
 .input-field select:focus{
